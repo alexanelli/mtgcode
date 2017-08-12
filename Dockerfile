@@ -11,7 +11,7 @@ ADD . /app
 RUN npm install package.json
 
 # Make port available to the world outside this container
-EXPOSE 8888
+EXPOSE 80
 
 # Define environment variable
 ENV NAME World
