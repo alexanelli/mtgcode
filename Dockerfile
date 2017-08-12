@@ -8,13 +8,10 @@ WORKDIR /app
 ADD . /app
 
 # Install any needed packages specified in requirements.txt
-RUN npm install package.json
+RUN npm install
 
 # Make port available to the world outside this container
 EXPOSE 80
 
-# Define environment variable
-ENV NAME World
-
-# Run app.py when the container launches
-CMD ["node", "app.js"]
+# Run app.js when the container launches
+CMD ["npm", "start"]
